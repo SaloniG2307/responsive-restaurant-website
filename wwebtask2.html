@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width=device-width , intial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="webtask.css">
+        <title>Restaurante</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">REST<span>AURANT</span></div>
+            <nav>
+
+        
+       <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#cart" id="cart-icon">Cart</a></li>
+        </ul>
+        </nav>
+        <div class="hamburger">☰</div>
+        </header>
+        <section id="home" class="home">
+            <div class="home-image">
+                <img src="resturant.jpg" alt="Restaurante">
+            </div>
+            <div class="home-text">
+                <h1>REST<span>AURANTE</span></h1>
+                <h3>Exquisite Cuisine</h3>
+                <a href="#menu" class="btn">Explore Our Menu</a>
+            </div>
+        </section>
+        <section id="menu" class="menu">
+            <h2>Menu</h2>
+            <div class="menu-category">
+                <h3>Starters</h3>
+                <div class="menu-items">
+                    <div class="card">
+                        <img src="starters.jpg" alt="">
+                        <div>
+                            <h4>Tomato Bruschetta -$5.00</h4>
+                            <p>Fresh tomatoes on toasted bread.</p>
+                            <button onclick="addToCart('Tomato Bruschetta',5)">Add to Cart</button>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="noodles.jpg">
+                        <div> 
+                            <h4>Hakka NOodles- $10.00</h4>
+                            <p>Made with lot of spicy and veggies.</p>
+                            <button onclick="addToCart('Hakka NOodles', 10)">Add to Cart</button>
+                        </div>
+
+                    </div>
+                    <div class ="card">
+                        <img src="crossiant.jpg">
+                        <div>
+                            <h4>Crossiant - $10.00</h4>
+                            <p>Crossiant with coffee</p>
+                            <button onclick="addToCart('Crossiant', 10)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class ="card">
+                        <img src="sandwich.jpg">
+                        <div>
+                            <h4>Sandwich - $20.00</h4>
+                            <p>Made with bread stuffed with crispy aloo patties</p>
+                            <button onclick="addToCart('Sandwich', 10)">Add to Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="menu-category">
+                <h3>Main Courses</h3>
+                <div class="menu-items">
+                    <div class="card">
+                        <img src="pizza.jpg">
+                        <div>
+                            <h4> Margherita Pizza - $12.00</h4>
+                            <p>Classic Italian style Pizza</p>
+                             <button onclick="addToCart('Margherita Pizza', 12)">Add to Cart</button>
+          
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="dosa.jpg">
+                        <div>
+                            <h4> Masala Dosa - $8.00</h4>
+                            <p>Made with indian spicy and served with three types of chutney</p>
+                            <button onclick="addToCart('Masala Dosa' , 8)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <h2> About Us</h2>
+            <div class="about-content">
+                <img src ="chef.jpg">
+                <p>We are passionate about fine food and customer experience. Our chefs bring years of expertise and creativity to every dish.</p>
+            </div>
+        </section>
+        <footer>
+            <p>© 2025 Restaurante. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#" target="_blank">Terms & Conditions</a>
+                <a href="#" target="_blank">Privacy Policy</a>
+                <a href="#" target="_blank">Back to Top</a>
+            </div>
+        </footer>
+        <div id="cart" class="cart">
+            <h3>Your Cart</h3>
+            <ul id="cart-items"></ul>
+            <p>Total : $<span id="cart-total">0.00</span></p>
+            <button class="checkout" id="checkout-btn">Checkout</button>
+        </div>
+        <script src="webtask.js"></script>
+    </body>
+</html>
